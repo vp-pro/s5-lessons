@@ -1,0 +1,1 @@
+select distinct json_array_elements(event_value::JSON->'product_payments')->>'product_name'as json_element from outbox 
